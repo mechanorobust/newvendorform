@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Registration Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Outfit', sans-serif;
+      background: #f2f7ff;
+      color: #1e1e2f;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+    .form-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .form-title span {
+      background: linear-gradient(90deg, #0052cc, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .underline {
+      width: 100px;
+      height: 4px;
+      margin: 0 auto 40px;
+      background: linear-gradient(to right, #0052cc, #00aaff);
+      border-radius: 4px;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0052cc;
+      margin-bottom: 20px;
+      border-left: 5px solid #00aaff;
+      padding-left: 12px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+    input[type="text"], input[type="url"], select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+    input[type="text"]:focus, input[type="url"]:focus, select:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+    }
+    .company-type-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .company-type {
+      flex: 1 1 30%;
+      text-align: center;
+      padding: 14px;
+      border: 2px solid #0052cc;
+      border-radius: 10px;
+      font-weight: 600;
+      background: #f9fbff;
+      color: #0052cc;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+    .company-type:hover {
+      background: linear-gradient(135deg, #0052cc, #00aaff);
+      color: white;
+      box-shadow: 0 6px 16px rgba(0, 82, 204, 0.2);
+    }
+    @media (max-width: 600px) {
+      .company-type {
+        flex: 1 1 100%;
+      }
+    }
+    .card-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-title">
+      <span>Vendor Registration Form</span>
+    </div>
+    <div class="underline"></div>
+
+    <!-- Company Profile -->
+   <div class="card-box">
+  <div class="section-title">Company Profile</div>
+
+  <label>Vendor/ Jobber Name</label>
+  <input type="text" placeholder="Enter Vendor or Jobber Name">
+
+  <label>Address</label>
+  <input type="text" placeholder="Enter Address">
+
+  <label>City</label>
+  <input type="text" placeholder="Enter City">
+
+  <label>Pincode</label>
+  <input type="text" placeholder="Enter Pincode">
+
+  <label>State</label>
+  <select>
+    <option>Select State</option>
+    <option>Andhra Pradesh</option>
+    <option>Arunachal Pradesh</option>
+    <option>Assam</option>
+    <option>Bihar</option>
+    <option>Chhattisgarh</option>
+    <option>Goa</option>
+    <option>Gujarat</option>
+    <option>Haryana</option>
+    <option>Himachal Pradesh</option>
+    <option>Jharkhand</option>
+    <option>Karnataka</option>
+    <option>Kerala</option>
+    <option>Madhya Pradesh</option>
+    <option>Maharashtra</option>
+    <option>Manipur</option>
+    <option>Meghalaya</option>
+    <option>Mizoram</option>
+    <option>Nagaland</option>
+    <option>Odisha</option>
+    <option>Punjab</option>
+    <option>Rajasthan</option>
+    <option>Sikkim</option>
+    <option>Tamil Nadu</option>
+    <option>Telangana</option>
+    <option>Tripura</option>
+    <option>Uttar Pradesh</option>
+    <option>Uttarakhand</option>
+    <option>West Bengal</option>
+    <option>Delhi</option>
+    <option>Jammu and Kashmir</option>
+    <option>Ladakh</option>
+    <option>Puducherry</option>
+  </select>
+
+  <label>Country</label>
+  <select>
+    <option>Select Country</option>
+    <option>India</option>
+    <option>Afghanistan</option>
+    <option>Australia</option>
+    <option>Bangladesh</option>
+    <option>Bhutan</option>
+    <option>Brazil</option>
+    <option>Canada</option>
+    <option>China</option>
+    <option>France</option>
+    <option>Germany</option>
+    <option>Indonesia</option>
+    <option>Italy</option>
+    <option>Japan</option>
+    <option>Malaysia</option>
+    <option>Nepal</option>
+    <option>Netherlands</option>
+    <option>New Zealand</option>
+    <option>Pakistan</option>
+    <option>Russia</option>
+    <option>Singapore</option>
+    <option>Sri Lanka</option>
+    <option>Thailand</option>
+    <option>United Arab Emirates</option>
+    <option>United Kingdom</option>
+    <option>United States</option>
+  </select>
+
+  <label>Website</label>
+  <input type="url" placeholder="https://example.com">
+</div>
+
+
+    <!-- Type of Company -->
+    <div class="card-box">
+      <div class="section-title">Type of Company</div>
+      <div class="company-type-buttons">
+        <div class="company-type">LTD</div>
+        <div class="company-type">PVT LTD</div>
+        <div class="company-type">LLP</div>
+        <div class="company-type">PARTNERSHIP</div>
+        <div class="company-type">SOLE PROPRIETOR</div>
+        <div class="company-type">OTHERS</div>
+      </div>
+    </div>
+
+    <!-- GST Information -->
+    <div class="card-box">
+      <div class="section-title">GST Information</div>
+      <label>GST Category</label><input type="text">
+      <label>If GST Registered, provide state-wise GST No.</label>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div><label>State</label><select><option>Select State</option><option>Andhra Pradesh</option><option>Bihar</option><option>Delhi</option><option>Gujarat</option><option>Maharashtra</option><option>Tamil Nadu</option><option>Telangana</option></select></div>
+        <div><label>GST No.</label><input type="text"></div>
+      </div>
+    </div>
+
+    <!-- MSME Information -->
+    <div class="card-box">
+      <div class="section-title">MSME Information</div>
+      <label>MSME Registered</label><input type="text">
+      <label>MSME Number</label><input type="text">
+      <label>Type of Enterprise</label><input type="text">
+      <label>Payment Terms (MSME)</label><input type="text">
+    </div>
+
+    <!-- Bank Information -->
+    <div class="card-box">
+      <div class="section-title">Bank Information</div>
+      <label>Bank Name</label><input type="text">
+      <label>Account Number</label><input type="text">
+      <label>IFSC Code</label><input type="text">
+      <label>Branch</label><input type="text">
+      <label>Account Type</label><input type="text">
+    </div>
+
+    <!-- General Information -->
+    <div class="card-box">
+      <div class="section-title">General Information</div>
+      <label>Payment Terms (Other than MSME)</label><input type="text">
+      <label>Freight Terms</label>
+      <select><option>Select</option><option>FOB</option><option>CIF</option><option>EXW</option><option>DDP</option></select>
+      <label>Currency</label>
+      <select><option>Select</option><option>INR</option><option>USD</option><option>EUR</option></select>
+    </div>
+
+    <!-- Declaration -->
+    <div class="card-box">
+      <p>I / We declare that the information furnished above are correct to the best of my / our knowledge and belief. We undertake to inform you at the earliest any change in the information provided above.</p>
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <p><strong>Date:</strong> ____________</p>
+          <p><strong>Place:</strong> ____________</p>
+        </div>
+        <div>
+          <p><strong>Signature:</strong> ____________</p>
+          <p><strong>Name of the Person(s):</strong> ____________</p>
+          <p><strong>Seal of the Firm / Company</strong></p>
+        </div>
+      </div>
+      <p><strong>Note:</strong></p>
+      <ol>
+        <li>PAN copy</li>
+        <li>GSTIN Registration Certificate</li>
+        <li>MSME Registration (UDYAM Registration)</li>
+        <li>Bank certified RTGS details or copy of cancelled cheque</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
